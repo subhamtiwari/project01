@@ -59,3 +59,16 @@ select name from world
 where name like '%united%'
 
 
+select name , round(population/1000000,2) , round(GDP/1000000000,2) from world 
+where continent like 'South America'
+
+
+select name , round(GDP/population , -3)
+from world 
+where gdp>=1000000000000
+
+
+
+SELECT name, capital
+FROM world
+where (LEFT(name,1) = left(capital,1) )and (name <> capital)
