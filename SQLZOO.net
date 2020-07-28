@@ -49,3 +49,13 @@ where population >= 200000000
 
 select name , gdp/population from world 
 where population >= 200000000
+
+
+select name , population from world 
+where name like 'France' or name like 'Germany' or name like 'italy'
+
+
+select name from world 
+where name like '%united%'
+
+
