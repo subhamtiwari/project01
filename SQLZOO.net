@@ -72,3 +72,41 @@ where gdp>=1000000000000
 SELECT name, capital
 FROM world
 where (LEFT(name,1) = left(capital,1) )and (name <> capital)
+
+
+Nobel <> 
+
+SELECT yr, subject, winner
+  FROM nobel
+ WHERE yr = 1950
+ 
+ 
+ SELECT winner
+  FROM nobel
+ WHERE yr = 1962
+   AND subject = 'Literature'
+   
+   select yr , subject from nobel
+where winner='Albert Einstein'
+
+
+select winner from nobel
+where subject = 'peace'
+and yr>=2000
+
+select yr , subject , winner from nobel 
+where (yr >= 1980 and yr <= 1989 ) and
+subject='Literature'
+
+
+SELECT * FROM nobel
+ WHERE
+  winner IN ('Barack Obama','Jimmy Carter','Woodrow Wilson','Theodore Roosevelt')
+  
+  
+  select winner from nobel
+where winner like 'John%'
+
+select yr , subject, winner from nobel
+where (subject like 'Physics' and yr=1980) or ( subject like 'chemistry' and yr=1984)
+
