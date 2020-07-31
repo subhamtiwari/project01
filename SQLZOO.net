@@ -110,3 +110,13 @@ where winner like 'John%'
 select yr , subject, winner from nobel
 where (subject like 'Physics' and yr=1980) or ( subject like 'chemistry' and yr=1984)
 
+
+select yr , subject , winner from nobel 
+where yr=1980 and subject not in ('chemistry','medicine')
+
+
+select yr , subject, winner from nobel 
+where (yr < 1910 and subject ='medicine') or (subject='Literature' and  yr >=2004)
+
+
+
