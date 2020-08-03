@@ -119,4 +119,7 @@ select yr , subject, winner from nobel
 where (yr < 1910 and subject ='medicine') or (subject='Literature' and  yr >=2004)
 
 
+select yr,subject,winner from nobel 
+where winner='PETER GRÜNBERG'
+
 
